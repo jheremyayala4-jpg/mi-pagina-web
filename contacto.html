@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Wireframe</title>
+    <link rel="stylesheet" href="estilos/hojaestilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">LOGO</div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicio.html">Servicios</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <h1>Contáctanos</h1>
+        <div class="linea media"></div>
+
+        <section class="dos-columnas">
+            <form class="formulario"
+                onsubmit="event.preventDefault(); alert('Formulario de ejemplo');">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" required>
+
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="5" required></textarea>
+
+                <button type="submit" class="boton">
+                    Enviar mensaje
+                </button>
+            </form>
+
+            <div>
+                <h2>Información de contacto</h2>
+                <div class="linea"></div>
+                <div class="linea media"></div>
+
+                <div class="imagen mapa">
+                    Mapa de ubicación
+                </div>
+
+                <h3>Horario de atención</h3>
+                <div class="linea"></div>
+                <div class="linea corta"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mi Wireframe - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
