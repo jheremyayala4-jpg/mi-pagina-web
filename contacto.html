@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - sitio web de ejemplo">
+    <title>Contacto - Mi página web</title>
+    <link rel="stylesheet" href="hojaestilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Mi página web</div>
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicio.html">Servicios</a>
+            <a href="contacto.html" class="activo" aria-current="page">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <section class="contenido">
+            <span class="etiqueta">Estamos para ayudarte</span>
+            <h1>Hablemos 👋</h1>
+            <p class="intro">Envíanos un mensaje de ejemplo o consulta la información de contacto.</p>
+            <section class="dos-columnas">
+                <form class="formulario" onsubmit="event.preventDefault(); alert('¡Gracias! Este formulario es una demostración y todavía no envía mensajes.');">
+                    <h2>Escríbenos</h2>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="¿Sobre qué quieres hablar?">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+                    <button type="submit" class="boton">Enviar mensaje ✉</button>
+                </form>
+                <div class="bloque">
+                    <h2>Información de contacto</h2>
+                    <p>Agrega aquí tu correo, teléfono o redes sociales.</p>
+                    <div class="imagen mapa"><span>Tu ubicación</span></div>
+                    <h3>Horario de atención</h3>
+                    <p>Agrega aquí tus días y horarios de atención.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Mi página web · Hecho con creatividad</p>
+    </footer>
+</body>
+</html>
